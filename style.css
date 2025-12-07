@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black: #202020;
+    --white: #fefefe;
+    --green: #70B669;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 95%);
+    padding: 0 48px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 28px;
+    margin-bottom: 4px;
+}
+
+#faunapp {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#pfp{
+    margin-left: auto;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+.back-btn { margin-bottom: 12px;
+    width: 100%;
+    text-align: left; }
+.back-btn a {
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+}
+
+h1 {
+    line-height: 1.0;
+    color: var(--black);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.highlight {
+    color: var(--green);
+    font-weight: bold;
+}
+
+.btns-container {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.btns-container p {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.button {
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+
+    color: var(--white);
+    padding: 12px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    justify-content: center;
+    width: 100%;
+    
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#label-btn1 {
+    background-color: var(--black);
+}
+
+#label-btn2 { 
+    background-color: var(--green); 
+}
+.button input {
+    display: none;
+}
+
+.log-ai {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .btns-container p {
+        margin: 8px 0;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+}
+
+.mappa {
+    background-color: gray;
+    width: 100%;
+    height: 40%;
+    border-radius: 15px;
+    margin: 20px;
+    position :relative;
+}
+
+.full-screen {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #202020;
+}
+
+#map {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+#p2 {
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+}
+
+.linea {
+    background-color: var(--black);
+    width: 50%;
+    margin: 24px;
+    border-radius: 45px;
+    height: 4px;
+}
+
+
+#label-btn3 {
+    background-color: var(--green);
+}
+
+#btn-zone {
+    background-color: var(--black);
+}
+
+.animal-img {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+}
+
+#p {
+    font-weight: 500;
+    margin-left: 8px;
+}
+
+.robe-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+
