@@ -1,52 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>FaunaApp</title>
-</head>
-<body>
-    
-    <header>
-        <img class="logo" src="./imgs/logo.png">
-        <p id="faunapp"><span class="highlight">Faun</span>App<span class="highlight">.</span></p>
-        
-        <!-- foto profilo -->
-        <img id="pfp" src="#">
-    </header>
-    
-    <main>
-        <div class="main-container">
-                <p class="back-btn"><a href="load.html">< torna indietro</a></p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
+		<title>FaunaApp</title>
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="./imgs/logo.png" />
+			<h2>
+				<span class="highlight">Faun</span>App<span class="highlight"
+					>.</span
+				>
+			</h2>
 
-            <div class="animal-img">
-                <img src="#" alt="">
-            </div>
+			<!-- foto profilo -->
+			<img class="pfp" src="#" />
+		</header>
 
-            <h1>
-                Questa foto contiene al <span class="highlight">99%</span> una <span class="highlight">Volpe dei Nebrodi</span>!
-            </h1>
+		<main>
+			<div class="main-container">
+				<p class="back-btn"><a href="load.html">< torna indietro</a></p>
 
-            <div class="linea"></div>
+				<img src="./imgs/logo.png" alt="foto animale" class="animal-img" />
 
-            <h1>Aiutaci a Migliorare il Nostro Servizio!!!</h1>
+				<h1 style="margin-bottom: 0">
+					Questa foto contiene al
+					<span class="highlight">99%</span> una
+					<span class="highlight">Volpe dei Nebrodi</span>!
+				</h1>
 
-            <div class="robe-container">
-                <div class="checkbox">
-                    <input type="checkbox" id="chk-box">
-                    <p id="p">Accetto termini a condizioni e altre cose dai</p>
-                </div>
-                        <label for="btn3" class="button" id="label-btn3">
-                            Invia dati Geolocalizzazione forza dai
-                            <input type="file" id="btn3">
-                        </label>
-            </div>
-        </div>
-    </main>
+				<hr />
 
+				<h1>Aiutaci a Migliorare il Nostro Servizio!!!</h1>
 
+				<label for="tos" class="checkbox">
+					<input type="checkbox" id="tos" />
+					Accetto termini a condizioni e altre cose dai
+				</label>
 
-</body>
+				<button class="button primary">
+					Invia dati Geolocalizzazione forza dai
+				</button>
+			</div>
+		</main>
+	</body>
 </html>
-
