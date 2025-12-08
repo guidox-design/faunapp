@@ -1,2 +1,2 @@
 # FaunAPP
-Progetto realizzato per il DevFest 2025 dai forza
+A simple prototype of a web app made for devfest
