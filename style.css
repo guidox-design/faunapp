@@ -3,7 +3,12 @@
 :root {
     --black: #202020;
     --white: #fefefe;
-    --green: #70B669;
+    --green: #70b669;
+}
+
+::selection {
+    background-color: var(--green);
+    color: var(--white);
 }
 
 * {
@@ -11,12 +16,12 @@
     padding: 0;
     box-sizing: border-box;
 
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-body{
+body {
     background-color: hsl(0, 0%, 95%);
-    padding: 0 48px;
+    padding: 24px;
     height: 100vh;
 }
 
@@ -27,39 +32,45 @@ header {
     width: 100%;
 }
 
-.logo {
-    width: 28px;
-    margin-bottom: 4px;
-}
-
-#faunapp {
-    font-size: 18px;
+header h2 {
+    font-size: 24px;
     font-weight: 600;
 }
 
-#pfp{
+.logo {
+    width: 36px;
+}
+
+.pfp {
     margin-left: auto;
 }
 
 main {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     width: 100%;
-    height: 100%;
+    height: 90%;
 }
 
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     width: 100%;
     max-width: 400px;
 }
 
-.back-btn { margin-bottom: 12px;
+.back-btn {
+    margin-bottom: 12px;
     width: 100%;
-    text-align: left; }
+    text-align: left;
+}
+
+.back-btn:hover {
+    opacity: 80%;
+}
+
 .back-btn a {
     text-decoration: none;
     color: var(--black);
@@ -69,11 +80,13 @@ main {
     text-align: left;
 }
 
-h1 {
-    line-height: 1.0;
+.main-container h1 {
+    line-height: 1;
     color: var(--black);
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 600;
+
+    margin-bottom: 24px;
 }
 
 .highlight {
@@ -82,7 +95,6 @@ h1 {
 }
 
 .btns-container {
-    margin-top: 40px;
     width: 100%;
 }
 
@@ -93,46 +105,68 @@ h1 {
 
 .button {
     display: inline-block;
-    text-align: center;
-    font-size: 14px;
 
+    text-align: center;
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
     color: var(--white);
+
     padding: 12px 16px;
     border-radius: 8px;
+
     cursor: pointer;
-    font-weight: 600;
+
     justify-content: center;
     width: 100%;
-    
+
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-#label-btn1 {
+.button:hover {
+    opacity: 80%;
+}
+
+.button.primary {
+    background-color: var(--green);
+}
+
+.button.secondary {
     background-color: var(--black);
 }
 
-#label-btn2 { 
-    background-color: var(--green); 
-}
 .button input {
     display: none;
 }
 
 .log-ai {
-    font-size: 12px;
+    font-size: 16px;
     font-weight: 500;
 }
 
 @media (max-width: 768px) {
-    h1 {
-        font-size: 20px;
+    .logo {
+        width: 28px;
+    }
+    header h2 {
+        font-size: 18px;
+    }
+
+    .main-container h1 {
+        font-size: 28px;
     }
 
     .btns-container p {
+        font-size: 16px;
         margin: 8px 0;
     }
 
     .button {
+        font-size: 14px;
+    }
+
+    .log-ai {
         font-size: 12px;
     }
 }
@@ -140,10 +174,12 @@ h1 {
 .mappa {
     background-color: gray;
     width: 100%;
-    height: 40%;
+    height: 300px;
+
     border-radius: 15px;
-    margin: 20px;
-    position :relative;
+    position: relative;
+
+    margin-bottom: 24px;
 }
 
 .full-screen {
@@ -153,33 +189,29 @@ h1 {
     background-color: #202020;
 }
 
-#map {
-    text-align: left;
-    width: 100%;
-    font-size: 32px;
-}
-
-#p2 {
+.label {
     font-weight: 600;
     text-align: left;
     width: 100%;
+    margin-bottom: 4px;
+    margin-left: 4px;
 }
 
 .linea {
     background-color: var(--black);
+
+    align-self: center;
+
     width: 50%;
-    margin: 24px;
-    border-radius: 45px;
-    height: 4px;
+    height: 3px;
+
+    margin: 24px 0;
+
+    border-radius: 100px;
 }
 
-
-#label-btn3 {
-    background-color: var(--green);
-}
-
-#btn-zone {
-    background-color: var(--black);
+select {
+    border: none;
 }
 
 .animal-img {
@@ -194,7 +226,6 @@ h1 {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-
 }
 
 #p {
@@ -206,8 +237,3 @@ h1 {
     width: 100%;
     margin-bottom: 20px;
 }
-
-
-
-
-

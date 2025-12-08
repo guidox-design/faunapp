@@ -1,49 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <title>FaunApp</title>
-</head>
-<body>
-    <header>
-        <img class="logo" src="./imgs/logo.png">
-        <p id="faunapp"><span class="highlight">Faun</span>App<span class="highlight">.</span></p>
-        
-        <!-- foto profilo -->
-        <img id="pfp" src="#">
-    </header>
-    
-    <main>
-        <div class="main-container">    
-            <div class="main-text">
-                <p class="back-btn"><a href="index.html">< torna alla mappa</a></p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
+	    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />	
+        <title>FaunApp</title>
+	</head>
+	<body>
+		<header>
+			<img class="logo" src="./imgs/logo.png" />
+			<h2>
+				<span class="highlight">Faun</span>App<span class="highlight"
+					>.</span
+				>
+			</h2>
 
-                <h1>Carica l'immagine di un Animale trovato nel <span class="highlight">Parco dei Nebrodi</span> per scoprire di che specie si tratta!</h1>    
-            </div>
+			<!-- foto profilo -->
+			<img class="pfp" src="#" />
+		</header>
 
-            <div class="btns-container">
-                <label for="button1" class="button" id="label-btn1">
-                    Carica immagine al volo
-                    <input type="file" id="button1">
-                </label>
+		<main>
+			<div class="main-container">
+				<div class="main-text">
+					<p class="back-btn">
+						<a href="index.html">< torna alla mappa</a>
+					</p>
 
-                <p>o</p>
+					<h1>
+						Carica l'immagine di un Animale trovato nel
+						<span class="highlight">Parco dei Nebrodi</span> per
+						scoprire di che specie si tratta!
+					</h1>
+				</div>
 
-                <label for="button2" class="button" id="label-btn2">
-                    Apri fotocamera bene
-                    <input type="file" id="button2">
-                </label>
-            </div>
-        </div>
-        
-    </main>    
-    
-    <footer class="log-ai">
-        <p>Log: Modello AI Caricato con <span class="highlight">Successo</span></p>
-    </footer>
-</body>
+				<div class="btns-container">
+					<label for="button1" class="button secondary">
+						Carica immagine al volo
+						<input type="file" />
+					</label>
+
+					<p>o</p>
+
+					<label for="button2" class="button primary">
+						Apri fotocamera bene
+						<input type="file" />
+					</label>
+				</div>
+			</div>
+		</main>
+
+		<footer class="log-ai">
+			<p>
+				Log: Modello AI Caricato con
+				<span class="highlight">Successo</span>
+			</p>
+		</footer>
+	</body>
 </html>
 
 <!-- mh-->
