@@ -5,7 +5,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
-		<title>FaunaApp</title>
+
+		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.13.0/dist/tf.min.js"></script>
+        
+        <title>FaunApp</title>
 	</head>
 	<body>
 		<header>
@@ -25,9 +28,13 @@
 			<div class="main-container">
 				<p class="back-btn"><a href="load.html">< torna indietro</a></p>
 
-				<img src="./imgs/logo.png" alt="foto animale" class="animal-img" />
+				<img
+					src="#"
+					alt="foto animale"
+					id="animal-img"
+				/>
 
-				<h1 style="margin-bottom: 0">
+				<h1 id="result" style="margin-bottom: 0">
 					Questa foto contiene al
 					<span class="highlight">99%</span> una
 					<span class="highlight">Volpe dei Nebrodi</span>!
@@ -47,5 +54,7 @@
 				</button>
 			</div>
 		</main>
+
+		<script src="./js/result.js"></script>
 	</body>
 </html>

@@ -5,6 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
+
 		<title>FaunApp</title>
 	</head>
 	<body>
@@ -30,38 +31,36 @@
 
 					<h1>
 						Carica l'immagine di un Animale trovato nel
-						<a class="highlight" href="https://www.parcodeinebrodi.it/">Parco dei Nebrodi</a> per
-						scoprire di che specie si tratta!
+						<a
+							class="highlight"
+							href="https://www.parcodeinebrodi.it/"
+							target="blank"
+							>Parco dei Nebrodi</a
+						>
+						per scoprire di che specie si tratta!
 					</h1>
 				</div>
 
 				<div class="btns-container">
-					<a href="./result.html" class="button secondary"
-						>Carica Immagine al Volo</a
-					>
-
-					<!-- <label for="button1" class="button secondary">
-						Carica immagine al volo
-						<input type="file" />
-                    </label> -->
+					<label for="img-input" class="button secondary">
+						Carica Immagine al Volo
+						<input type="file" accept="image/*" id="img-input" />
+					</label>
 
 					<p>o</p>
-
-					<label for="button2" class="button primary">
-						Apri fotocamera bene
-						<input type="file" />
+					<label for="camera-input" class="button primary">
+						Apri Fotocamera Bene
+						<input
+							type="file"
+							capture="environment"
+							accept="image/*"
+							id="camera-input"
+						/>
 					</label>
 				</div>
 			</div>
 		</main>
 
-		<footer class="log-ai">
-			<p>
-				Log: Modello AI Caricato con
-				<span class="highlight">Successo</span>
-			</p>
-		</footer>
+		<script src="./js/load.js"></script>
 	</body>
 </html>
-
-<!-- mh-->

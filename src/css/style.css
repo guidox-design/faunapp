@@ -4,6 +4,7 @@
     --black: #202020;
     --white: #fefefe;
     --green: #70b669;
+    --red: #d23e3e;
 }
 
 ::selection {
@@ -111,6 +112,11 @@ main {
     font-weight: bold;
 }
 
+.error {
+    color: var(--red);
+    font-weight: bold;
+}
+
 .btns-container {
     width: 100%;
 }
@@ -166,10 +172,13 @@ main {
     font-weight: 500;
 }
 
-#map {
+#map-container {
     background-color: gray;
+
     width: 100%;
     height: 300px;
+
+    text-align: center;
 
     border-radius: 16px;
     position: relative;
@@ -177,13 +186,26 @@ main {
     margin-bottom: 24px;
 }
 
-#map.fullscreen {
+#map-container.fullscreen {
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100%;
 
+    border-radius: 0;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 16px;
+
+    object-fit: cover;
+}
+
+#map-container.fullscreen #map {
     border-radius: 0;
 }
 
@@ -240,7 +262,7 @@ select {
     border: none;
 }
 
-.animal-img {
+#animal-img {
     object-fit: contain;
 
     width: 100%;
@@ -257,7 +279,7 @@ select {
 }
 
 @media screen and (max-height: 700px) {
-    .map {
+    #map-container {
         height: 200px;
     }
 
