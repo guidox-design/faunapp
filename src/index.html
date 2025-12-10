@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
-	    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />	
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
 		<title>FaunApp</title>
 	</head>
 	<body>
@@ -16,18 +16,25 @@
 				>
 			</h2>
 
-			<!-- foto profilo -->
-			<img class="pfp" src="#" />
+			<!-- foto profilo, essendo un prototipo questa e' solo un'immagine,
+            in futuro andrebbe integrata con una pagina apposita per il profilo utente -->
+			<img class="pfp" src="./imgs/pfp.jpg" />
 		</header>
 
 		<main>
 			<div class="main-container">
 				<h1>Mappazza</h1>
 
-				<div class="map">
-					<img src="#" alt="" />
+				<div id="map">
+					<img src="#" alt="map" />
 
-					<div class="full-screen">ICONA</div>
+					<button id="maximize-btn" class="secondary">
+						<img
+							id="maximize-icon"
+							src="./icons/maximize.svg"
+							alt="maximize"
+						/>
+					</button>
 				</div>
 
 				<p class="label">Filtra per:</p>
@@ -40,9 +47,11 @@
 				<hr />
 
 				<a href="./load.html" class="button primary">
-					HAI VISTO ANIMALE???
+					HAI VISTO UN ANIMALE???
 				</a>
 			</div>
 		</main>
+
+		<script src="js/map.js"></script>
 	</body>
 </html>

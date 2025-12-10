@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="style.css" />
-	    <link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />	
-        <title>FaunApp</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="icon" type="image/x-icon" href="./imgs/favicon.png" />
+		<title>FaunApp</title>
 	</head>
 	<body>
 		<header>
@@ -16,8 +16,9 @@
 				>
 			</h2>
 
-			<!-- foto profilo -->
-			<img class="pfp" src="#" />
+			<!-- foto profilo, essendo un prototipo questa e' solo un'immagine,
+            in futuro andrebbe integrata con una pagina apposita per il profilo utente -->
+			<img class="pfp" src="./imgs/pfp.jpg" />
 		</header>
 
 		<main>
@@ -29,16 +30,20 @@
 
 					<h1>
 						Carica l'immagine di un Animale trovato nel
-						<span class="highlight">Parco dei Nebrodi</span> per
+						<a class="highlight" href="https://www.parcodeinebrodi.it/">Parco dei Nebrodi</a> per
 						scoprire di che specie si tratta!
 					</h1>
 				</div>
 
 				<div class="btns-container">
-					<label for="button1" class="button secondary">
+					<a href="./result.html" class="button secondary"
+						>Carica Immagine al Volo</a
+					>
+
+					<!-- <label for="button1" class="button secondary">
 						Carica immagine al volo
 						<input type="file" />
-					</label>
+                    </label> -->
 
 					<p>o</p>
 
