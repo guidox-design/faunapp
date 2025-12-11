@@ -1,7 +1,6 @@
 // === CONFIGURAZIONE DEL MODELLO ===
 const MODEL_URL = './js/model/model.json';
-const MAX_CLASSES = 2;
-const LABELS = ['Volpe', 'Cane'];
+const LABELS = ['Cinghiale', 'Volpe', 'Martora'];
 
 const results = document.getElementById('result');
 let model;
@@ -52,7 +51,7 @@ async function predict(imgEl) {
 			// 4. Aggiorna l'interfaccia utente
 			results.innerHTML = `
                 Questa foto contiene al <span class="highlight">${(maxConfidence * 100).toFixed(2)}%</span>
-                ${index == 1 ? 'un' : 'una'} <span class="highlight">${LABELS[index]}</span>.
+                ${index == 0 ? 'un' : 'una'} <span class="highlight">${LABELS[index]}</span>.
                 `;
 		});
 	});
