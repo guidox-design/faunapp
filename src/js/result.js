@@ -40,7 +40,7 @@ async function predict(imgEl) {
 		const prediction = model.predict(img);
 
 		// 3. Ottieni la classe predetta e la confidenza
-		// Uso del metodo .data() per ottenere i valori (è asincrono, ma più pulito con tf.tidy)
+		// Uso del metodo .data() per ottenere i valori
 		prediction.data().then((data) => {
 			const values = Array.from(data);
 
