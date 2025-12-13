@@ -1,321 +1,325 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-	--black: #202020;
-	--white: #fefefe;
-	--green: #70b669;
-	--red: #d23e3e;
+    --black: #202020;
+    --white: #fefefe;
+    --green: #70b669;
+    --red: #d23e3e;
 }
 
 ::selection {
-	background-color: var(--green);
-	color: var(--white);
+    background-color: var(--green);
+    color: var(--white);
 }
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 
-	font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-	background-color: var(--white);
+    background-color: var(--white);
     height: 100vh;
 }
 
 a:hover {
-	opacity: 80%;
+    opacity: 80%;
 }
 
 header {
-	position: fixed;
+    position: fixed;
 
-	padding: 24px 24px 0 24px;
+    padding: 24px 24px 0 24px;
 
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
 }
 
 header h2 {
-	font-size: 24px;
-	font-weight: 600;
+    font-size: 24px;
+    font-weight: 600;
 }
 
 .logo {
-	width: 36px;
+    width: 36px;
 }
 
 .pfp {
-	margin-left: auto;
-	max-width: 36px;
-	max-height: 36px;
-	aspect-ratio: 1;
-	border-radius: 100%;
+    margin-left: auto;
+    max-width: 36px;
+    max-height: 36px;
+    aspect-ratio: 1;
+    border-radius: 100%;
 
-	object-fit: cover;
+    object-fit: cover;
 }
 
 main {
-	display: grid;
-	place-items: center;
-	width: 100%;
-	height: 100%;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
 
-	padding: 24px;
+    padding: 24px;
 }
 
 .main-container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: start;
-	width: 100%;
-	max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    max-width: 400px;
 
-	padding: 64px 0;
+    padding: 64px 0;
 }
 
 .back-btn {
-	margin-bottom: 12px;
-	width: 100%;
-	text-align: left;
+    margin-bottom: 12px;
+    width: 100%;
+    text-align: left;
 }
 
 .back-btn:hover {
-	opacity: 80%;
+    opacity: 80%;
 }
 
 .back-btn a {
-	text-decoration: none;
-	color: var(--black);
-	font-size: 14px;
-	font-weight: 600;
-	width: 100%;
-	text-align: left;
+    text-decoration: none;
+    color: var(--black);
+    font-size: 14px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
 }
 
 .main-container h1 {
-	line-height: 1;
-	color: var(--black);
-	font-size: 36px;
-	font-weight: 600;
+    line-height: 1;
+    color: var(--black);
+    font-size: 36px;
+    font-weight: 600;
 
-	margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 .highlight {
-	color: var(--green);
-	font-weight: bold;
+    color: var(--green);
+    font-weight: bold;
 }
 
 .error {
-	color: var(--red);
-	font-weight: bold;
+    color: var(--red);
+    font-weight: bold;
 }
 
 .btns-container {
-	width: 100%;
+    width: 100%;
 }
 
 .btns-container p {
-	text-align: center;
-	margin: 20px 0;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .button {
-	display: inline-block;
+    display: inline-block;
 
-	text-align: center;
-	text-decoration: none;
+    text-align: center;
+    text-decoration: none;
 
-	font-size: 14px;
-	font-weight: 600;
-	color: var(--white);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
 
-	padding: 20px 16px;
-	border: none;
-	border-radius: 8px;
+    padding: 20px 16px;
+    border: none;
+    border-radius: 8px;
 
-	cursor: pointer;
+    cursor: pointer;
 
-	justify-content: center;
-	width: 100%;
+    justify-content: center;
+    width: 100%;
 
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button:hover {
-	opacity: 80%;
+    opacity: 80%;
 }
 
 .primary {
-	background-color: var(--green);
+    background-color: var(--green);
 }
 
 .secondary {
-	background-color: var(--black);
+    background-color: var(--black);
 }
 
 .button input {
-	display: none;
+    display: none;
 }
 
 .log-ai {
-	position: fixed;
-	bottom: 0;
-	padding: 24px 0 24px 24px;
-	font-size: 16px;
-	font-weight: 500;
+    position: fixed;
+    bottom: 0;
+    padding: 24px 0 24px 24px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 #map-container {
-	background-color: gray;
+    background-color: gray;
 
-	width: 100%;
-	height: 300px;
+    width: 100%;
+    height: 300px;
 
-	text-align: center;
+    text-align: center;
 
-	border-radius: 16px;
-	position: relative;
+    border-radius: 16px;
+    position: relative;
 
-	margin-bottom: 24px;
+    margin-bottom: 24px;
 }
 
 #map-container.fullscreen {
-	position: fixed;
-	top: 0;
-	left: 0;
-	height: 100vh;
-	width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
 
-	border-radius: 0;
+    border-radius: 0;
 }
 
 #map {
-	width: 100%;
-	height: 100%;
+    width: 100%;
+    height: 100%;
 
-	border-radius: 16px;
+    border-radius: 16px;
 
-	object-fit: cover;
+    object-fit: cover;
 }
 
 #map-container.fullscreen #map {
-	border-radius: 0;
+    border-radius: 0;
 }
 
 #maximize-btn {
-	position: absolute;
-	bottom: 8px;
-	right: 8px;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
 
-	display: grid;
-	place-items: center;
+    display: grid;
+    place-items: center;
 
-	width: 40px;
-	height: 40px;
+    width: 40px;
+    height: 40px;
 
-	border: none;
-	border-radius: 8px;
+    border: none;
+    border-radius: 8px;
 
-	cursor: pointer;
+    cursor: pointer;
 
-	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 #maximize-btn img {
-	width: 20px;
-	height: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 #maximize-btn:hover {
-	opacity: 80%;
+    opacity: 80%;
 }
 
 .label {
-	font-weight: 600;
-	text-align: left;
-	width: 100%;
-	margin-bottom: 4px;
-	margin-left: 4px;
+    font-weight: 600;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 4px;
+    margin-left: 4px;
 }
 
 hr {
-	background-color: var(--black);
+    background-color: var(--black);
 
-	align-self: center;
+    align-self: center;
 
-	width: 50%;
-	height: 3px;
+    width: 50%;
+    height: 3px;
 
-	margin: 24px 0;
+    margin: 24px 0;
 
-	border-radius: 100px;
+    border-radius: 100px;
 }
 
 select {
-	border: none;
+    border: none;
 }
 
 #animal-img {
-	object-fit: contain;
+    object-fit: contain;
 
-	width: 100%;
-	height: 300px;
-	border-radius: 8px;
-	margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .checkbox {
-	margin-bottom: 12px;
+    margin-bottom: 12px;
 
-	font-weight: 600;
-	color: var(--black);
+    font-weight: 600;
+    color: var(--black);
 }
 
 @media screen and (max-height: 700px) {
-	#map-container {
-		height: 200px;
-	}
+    #map-container {
+        height: 200px;
+    }
 
-	.main-container h1 {
-		font-size: 28px;
-	}
+    .main-container h1 {
+        font-size: 28px;
+    }
 }
 
 @media (max-width: 768px) {
-	.logo {
-		width: 28px;
-	}
+    .logo {
+        width: 28px;
+    }
 
-	header {
-		background-color: var(--white);
-	}
+    header {
+        background-color: var(--white);
+    }
 
-	header h2 {
-		font-size: 18px;
-	}
+    header h2 {
+        font-size: 18px;
+    }
 
-	.main-container h1 {
-		font-size: 28px;
-	}
+    .main-container h1 {
+        font-size: 28px;
+    }
 
-	.btns-container p {
-		font-size: 16px;
-		margin: 8px 0;
-	}
+    .btns-container p {
+        font-size: 16px;
+        margin: 8px 0;
+    }
 
-	.button {
-		font-size: 14px;
-	}
+    .button {
+        font-size: 14px;
+    }
 
-	.log-ai {
-		font-size: 12px;
-		background-color: var(--white);
-	}
+    .button:hover {
+        opacity: 100%;
+    }
+
+    .log-ai {
+        font-size: 12px;
+        background-color: var(--white);
+    }
 }
